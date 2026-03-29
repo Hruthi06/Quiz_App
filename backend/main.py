@@ -1,35 +1,70 @@
 from fastapi import FastAPI
 from pydantic import BaseModel
 from fastapi.middleware.cors import CORSMiddleware
+import json
+import re
+import os
+import random
 
 app = FastAPI()
+
+# Get absolute path to questions.json
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+QUESTIONS_FILE = os.path.join(BASE_DIR, "questions.json")
+
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],  # allow all (for hackathon)
+    allow_origins=["*"],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
 )
 
-questions = [
-    {
-        "id": 1,
-        "question": "What does HTML stand for?",
-        "options": [
-            "Hyper Text Markup Language",
-            "High Tech Modern Language",
-            "Hyper Transfer Machine Language",
-            "Home Tool Markup Language"
-        ],
-        "answer": "Hyper Text Markup Language"
-    }
-]
+# Shared state for questions
+questions = []
 
-class Answer(BaseModel):
+class AnswerSubmission(BaseModel):
     answers: dict
+
+@app.get("/generate")
+def generate_questions(category: str):
+    global questions
+    
+    # 1. Try loading from local questions.json first
+    try:
+        if os.path.exists(QUESTIONS_FILE):
+            with open(QUESTIONS_FILE, "r") as f:
+                local_data = json.load(f)
+                for item in local_data:
+                    if item["category"].lower() == category.lower():
+                        all_questions = item["questions"]
+                        random.shuffle(all_questions)
+                        questions = all_questions[:10]
+                        print(f"Loading 10 random questions for {category}")
+                        return questions
+    except Exception as e:
+        print(f"Error reading local questions: {e}")
+
+    # 2. If not found, return empty
+    print(f"Category {category} not found in local file")
+    questions = []
+    return {"error": "Category not found"}
+
+@app.get("/categories")
+def get_categories():
+    try:
+        if os.path.exists(QUESTIONS_FILE):
+            with open(QUESTIONS_FILE, "r") as f:
+                local_data = json.load(f)
+                return [{"name": item["category"]} for item in local_data]
+    except Exception as e:
+        print(f"Error reading categories: {e}")
+    
+    return []
 
 @app.get("/questions")
 def get_questions():
+    # Only return what's necessary for the UI (hide answers/explanations until submission)
     return [
         {
             "id": q["id"],
@@ -39,10 +74,23 @@ def get_questions():
     ]
 
 @app.post("/submit")
-def submit_answers(data: Answer):
+def submit_answers(data: AnswerSubmission):
     score = 0
+    results = []
+    
     for q in questions:
-        if str(q["id"]) in data.answers:
-            if data.answers[str(q["id"])] == q["answer"]:
-                score += 1
-    return {"score": score}
+        user_answer = data.answers.get(str(q["id"])) or data.answers.get(q["id"])
+        is_correct = user_answer == q["answer"]
+        if is_correct:
+            score += 1
+            
+        results.append({
+            "id": q["id"],
+            "question": q["question"],
+            "correct_answer": q["answer"],
+            "user_answer": user_answer,
+            "is_correct": is_correct,
+            "explanation": q.get("explanation", "")
+        })
+            
+    return {"score": score, "total": len(questions), "results": results}
