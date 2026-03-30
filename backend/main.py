@@ -33,14 +33,18 @@ def generate_questions(category: str):
     # 1. Try loading from local questions.json first
     try:
         if os.path.exists(QUESTIONS_FILE):
-            with open(QUESTIONS_FILE, "r") as f:
+            with open(QUESTIONS_FILE, "r", encoding="utf-8") as f:
                 local_data = json.load(f)
-                for item in local_data:
-                    if item["category"].lower() == category.lower():
-                        all_questions = item["questions"]
+                for cat, q_list in local_data.items():
+                    if cat.lower() == category.lower():
+                        all_questions = q_list.copy()
                         random.shuffle(all_questions)
                         questions = all_questions[:10]
-                        print(f"Loading 10 random questions for {category}")
+                        # Ensure every question has an ID
+                        for i, q in enumerate(questions):
+                            if "id" not in q:
+                                q["id"] = i + 1
+                        print(f"Loading 10 random questions for {cat}")
                         return questions
     except Exception as e:
         print(f"Error reading local questions: {e}")
@@ -54,9 +58,9 @@ def generate_questions(category: str):
 def get_categories():
     try:
         if os.path.exists(QUESTIONS_FILE):
-            with open(QUESTIONS_FILE, "r") as f:
+            with open(QUESTIONS_FILE, "r", encoding="utf-8") as f:
                 local_data = json.load(f)
-                return [{"name": item["category"]} for item in local_data]
+                return [{"name": cat} for cat in local_data.keys()]
     except Exception as e:
         print(f"Error reading categories: {e}")
     

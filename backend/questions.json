@@ -1,883 +1,1334 @@
-[
 {
-  "category": "Engineering Mathematics",
-  "questions": [
+  "Programming Fundamentals": [
     {
-      "id": 1,
-      "question": "Derivative of x^2 is?",
-      "options": ["x", "2x", "x^2", "2"],
-      "answer": "2x",
-      "explanation": "Using power rule d/dx(x^n) = n*x^(n-1)."
-    },
-    {
-      "id": 2,
-      "question": "∫ x dx = ?",
-      "options": ["x", "x^2/2", "2x", "1"],
-      "answer": "x^2/2",
-      "explanation": "Integral of x is x^2/2."
-    },
-    {
-      "id": 3,
-      "question": "sin(0°) = ?",
-      "options": ["0", "1", "-1", "0.5"],
-      "answer": "0",
-      "explanation": "sin(0°) = 0."
-    },
-    {
-      "id": 4,
-      "question": "cos(0°) = ?",
-      "options": ["0", "1", "-1", "0.5"],
-      "answer": "1",
-      "explanation": "cos(0°) = 1."
-    },
-    {
-      "id": 5,
-      "question": "log(1) = ?",
-      "options": ["0", "1", "10", "-1"],
-      "answer": "0",
-      "explanation": "log(1) = 0 for any base."
-    },
-    {
-      "id": 6,
-      "question": "Value of π approximately?",
-      "options": ["2.14", "3.14", "4.13", "1.34"],
-      "answer": "3.14",
-      "explanation": "π ≈ 3.14."
-    },
-    {
-      "id": 7,
-      "question": "d/dx(sin x) = ?",
-      "options": ["cos x", "-cos x", "sin x", "-sin x"],
-      "answer": "cos x",
-      "explanation": "Derivative of sin x is cos x."
-    },
-    {
-      "id": 8,
-      "question": "d/dx(cos x) = ?",
-      "options": ["sin x", "-sin x", "cos x", "-cos x"],
-      "answer": "-sin x",
-      "explanation": "Derivative of cos x is -sin x."
-    },
-    {
-      "id": 9,
-      "question": "Matrix determinant of identity matrix?",
-      "options": ["0", "1", "2", "-1"],
-      "answer": "1",
-      "explanation": "Determinant of identity matrix is 1."
-    },
-    {
-      "id": 10,
-      "question": "If a vector has magnitude 0, it is?",
-      "options": ["Unit vector", "Zero vector", "Scalar", "Matrix"],
-      "answer": "Zero vector",
-      "explanation": "Zero magnitude vector is zero vector."
-    },
-    {
-      "id": 11,
-      "question": "tan(45°) = ?",
-      "options": ["0", "1", "-1", "√2"],
-      "answer": "1",
-      "explanation": "tan(45°) = 1."
-    },
-    {
-      "id": 12,
-      "question": "∫ 1/x dx = ?",
-      "options": ["ln x", "x", "1/x", "x^2"],
-      "answer": "ln x",
-      "explanation": "Integral of 1/x is ln x."
-    },
-    {
-      "id": 13,
-      "question": "Derivative of e^x?",
-      "options": ["e^x", "x", "1", "0"],
-      "answer": "e^x",
-      "explanation": "Derivative of e^x is e^x."
-    },
-    {
-      "id": 14,
-      "question": "Limit of x→0 sin x/x = ?",
-      "options": ["0", "1", "∞", "-1"],
-      "answer": "1",
-      "explanation": "Standard limit result."
-    },
-    {
-      "id": 15,
-      "question": "Number of rows in a matrix?",
-      "options": ["Order", "Rank", "Row size", "Dimension"],
-      "answer": "Order",
-      "explanation": "Matrix order defines rows × columns."
-    },
-    {
-      "id": 16,
-      "question": "sin^2x + cos^2x = ?",
-      "options": ["0", "1", "2", "-1"],
-      "answer": "1",
-      "explanation": "Basic trigonometric identity."
-    },
-    {
-      "id": 17,
-      "question": "d/dx(ln x) = ?",
-      "options": ["1/x", "x", "ln x", "0"],
-      "answer": "1/x",
-      "explanation": "Derivative of ln x is 1/x."
-    },
-    {
-      "id": 18,
-      "question": "Vector cross product gives?",
-      "options": ["Scalar", "Vector", "Matrix", "Zero"],
-      "answer": "Vector",
-      "explanation": "Cross product results in a vector."
-    },
-    {
-      "id": 19,
-      "question": "Integration is inverse of?",
-      "options": ["Multiplication", "Differentiation", "Division", "Addition"],
-      "answer": "Differentiation",
-      "explanation": "Integration reverses differentiation."
-    },
-    {
-      "id": 20,
-      "question": "Value of cos(90°)?",
-      "options": ["0", "1", "-1", "0.5"],
-      "answer": "0",
-      "explanation": "cos(90°) = 0."
-    }
-  ]
-},
-{
-  "category": "Technical English",
-  "questions": [
-    {
-      "id": 1,
-      "question": "Choose the correct synonym of 'rapid'",
-      "options": ["slow", "quick", "weak", "late"],
-      "answer": "quick",
-      "explanation": "'Rapid' means fast or quick."
-    },
-    {
-      "id": 2,
-      "question": "Choose the correct antonym of 'increase'",
-      "options": ["grow", "expand", "reduce", "rise"],
-      "answer": "reduce",
-      "explanation": "'Reduce' is the opposite of increase."
-    },
-    {
-      "id": 3,
-      "question": "Fill in the blank: She ___ to school daily.",
-      "options": ["go", "goes", "gone", "going"],
-      "answer": "goes",
-      "explanation": "Singular subject 'She' takes 'goes'."
-    },
-    {
-      "id": 4,
-      "question": "Identify the correct sentence:",
+      "question": "What is OOP?",
       "options": [
-        "He do his work",
-        "He does his work",
-        "He doing work",
-        "He done work"
+        "Object-Oriented Programming",
+        "Only One Process",
+        "Open Operation Protocol",
+        "None"
       ],
-      "answer": "He does his work",
-      "explanation": "Correct verb form for 'He' is 'does'."
+      "answer": "Object-Oriented Programming",
+      "explanation": "OOP is a programming paradigm based on objects and classes."
     },
     {
-      "id": 5,
-      "question": "Choose correct spelling:",
-      "options": ["Recieve", "Receive", "Receve", "Recive"],
-      "answer": "Receive",
-      "explanation": "Correct spelling is 'Receive'."
-    },
-    {
-      "id": 6,
-      "question": "Fill in the blank: I ___ a book yesterday.",
-      "options": ["read", "reads", "reading", "reader"],
-      "answer": "read",
-      "explanation": "'Read' is correct past form here."
-    },
-    {
-      "id": 7,
-      "question": "Choose synonym of 'accurate'",
-      "options": ["wrong", "precise", "rough", "false"],
-      "answer": "precise",
-      "explanation": "'Accurate' means correct or precise."
-    },
-    {
-      "id": 8,
-      "question": "Choose antonym of 'strong'",
-      "options": ["powerful", "weak", "solid", "hard"],
-      "answer": "weak",
-      "explanation": "'Weak' is opposite of strong."
-    },
-    {
-      "id": 9,
-      "question": "Fill in the blank: They ___ playing cricket.",
-      "options": ["is", "are", "was", "be"],
-      "answer": "are",
-      "explanation": "'They' takes 'are'."
-    },
-    {
-      "id": 10,
-      "question": "Choose correct article: ___ apple",
-      "options": ["a", "an", "the", "no article"],
-      "answer": "an",
-      "explanation": "'Apple' starts with vowel sound → 'an'."
-    },
-    {
-      "id": 11,
-      "question": "Choose synonym of 'difficult'",
-      "options": ["easy", "hard", "simple", "clear"],
-      "answer": "hard",
-      "explanation": "'Difficult' means hard."
-    },
-    {
-      "id": 12,
-      "question": "Choose antonym of 'happy'",
-      "options": ["joyful", "sad", "glad", "excited"],
-      "answer": "sad",
-      "explanation": "'Sad' is opposite of happy."
-    },
-    {
-      "id": 13,
-      "question": "Fill in the blank: He ___ completed his work.",
-      "options": ["has", "have", "had", "having"],
-      "answer": "has",
-      "explanation": "Singular subject uses 'has'."
-    },
-    {
-      "id": 14,
-      "question": "Choose correct sentence:",
+      "question": "Which concept allows reusing code?",
       "options": [
-        "She don't like tea",
-        "She doesn't like tea",
-        "She not like tea",
-        "She no like tea"
+        "Encapsulation",
+        "Inheritance",
+        "Abstraction",
+        "Polymorphism"
       ],
-      "answer": "She doesn't like tea",
-      "explanation": "Correct negative form is 'doesn't'."
+      "answer": "Inheritance",
+      "explanation": "Inheritance allows a class to acquire properties of another class."
     },
     {
-      "id": 15,
-      "question": "Choose synonym of 'begin'",
-      "options": ["end", "start", "stop", "finish"],
-      "answer": "start",
-      "explanation": "'Begin' means start."
+      "question": "Which keyword is used to define a class in Java?",
+      "options": [
+        "class",
+        "define",
+        "struct",
+        "object"
+      ],
+      "answer": "class",
+      "explanation": "The 'class' keyword is used to define a class in Java."
     },
     {
-      "id": 16,
-      "question": "Choose antonym of 'early'",
-      "options": ["soon", "fast", "late", "quick"],
-      "answer": "late",
-      "explanation": "'Late' is opposite of early."
+      "question": "Which data type stores decimal values?",
+      "options": [
+        "int",
+        "float",
+        "char",
+        "boolean"
+      ],
+      "answer": "float",
+      "explanation": "float and double are used to store decimal values."
     },
     {
-      "id": 17,
-      "question": "Fill in the blank: This is ___ best book.",
-      "options": ["a", "an", "the", "no article"],
-      "answer": "the",
-      "explanation": "Superlatives take 'the'."
+      "question": "What is a variable?",
+      "options": [
+        "Storage location",
+        "Function",
+        "Loop",
+        "Class"
+      ],
+      "answer": "Storage location",
+      "explanation": "A variable stores data values."
     },
     {
-      "id": 18,
-      "question": "Choose correct preposition: He is good ___ math.",
-      "options": ["in", "on", "at", "for"],
-      "answer": "at",
-      "explanation": "Correct phrase is 'good at'."
+      "question": "Which loop is entry-controlled?",
+      "options": [
+        "for",
+        "do-while",
+        "none",
+        "both"
+      ],
+      "answer": "for",
+      "explanation": "for loop checks condition before execution."
     },
     {
-      "id": 19,
-      "question": "Choose synonym of 'large'",
-      "options": ["small", "big", "tiny", "short"],
-      "answer": "big",
-      "explanation": "'Large' means big."
+      "question": "Which loop runs at least once?",
+      "options": [
+        "for",
+        "while",
+        "do-while",
+        "none"
+      ],
+      "answer": "do-while",
+      "explanation": "do-while executes once before checking condition."
     },
     {
-      "id": 20,
-      "question": "Choose antonym of 'fast'",
-      "options": ["quick", "rapid", "slow", "speed"],
-      "answer": "slow",
-      "explanation": "'Slow' is opposite of fast."
+      "question": "What is encapsulation?",
+      "options": [
+        "Binding data and methods",
+        "Inheritance",
+        "Looping",
+        "Compilation"
+      ],
+      "answer": "Binding data and methods",
+      "explanation": "Encapsulation combines data and methods into a single unit."
+    },
+    {
+      "question": "Which operator is used for comparison?",
+      "options": [
+        "=",
+        "==",
+        "+",
+        "*"
+      ],
+      "answer": "==",
+      "explanation": "== compares two values."
+    },
+    {
+      "question": "Which keyword is used for inheritance?",
+      "options": [
+        "extends",
+        "implements",
+        "inherits",
+        "super"
+      ],
+      "answer": "extends",
+      "explanation": "In Java, 'extends' is used for inheritance."
+    },
+    {
+      "question": "What is polymorphism?",
+      "options": [
+        "Many forms",
+        "Single form",
+        "No form",
+        "Loop"
+      ],
+      "answer": "Many forms",
+      "explanation": "Polymorphism allows methods to behave differently."
+    },
+    {
+      "question": "Which method is entry point in Java?",
+      "options": [
+        "start()",
+        "main()",
+        "run()",
+        "init()"
+      ],
+      "answer": "main()",
+      "explanation": "Execution starts from main() method."
+    },
+    {
+      "question": "Which symbol ends a statement in Java?",
+      "options": [
+        ";",
+        ".",
+        ",",
+        ":"
+      ],
+      "answer": ";",
+      "explanation": "Semicolon ends a statement."
+    },
+    {
+      "question": "Which data type stores true/false?",
+      "options": [
+        "int",
+        "boolean",
+        "char",
+        "float"
+      ],
+      "answer": "boolean",
+      "explanation": "Boolean stores true or false values."
+    },
+    {
+      "question": "Which is not a primitive type?",
+      "options": [
+        "int",
+        "float",
+        "String",
+        "char"
+      ],
+      "answer": "String",
+      "explanation": "String is a class, not a primitive type."
+    },
+    {
+      "question": "What is a function?",
+      "options": [
+        "Reusable block of code",
+        "Variable",
+        "Class",
+        "Object"
+      ],
+      "answer": "Reusable block of code",
+      "explanation": "Functions perform specific tasks."
+    },
+    {
+      "question": "Which access modifier is most restrictive?",
+      "options": [
+        "public",
+        "private",
+        "protected",
+        "default"
+      ],
+      "answer": "private",
+      "explanation": "Private members are accessible only within the class."
+    },
+    {
+      "question": "Which concept hides implementation?",
+      "options": [
+        "Encapsulation",
+        "Abstraction",
+        "Inheritance",
+        "Polymorphism"
+      ],
+      "answer": "Abstraction",
+      "explanation": "Abstraction hides internal details."
+    },
+    {
+      "question": "Which keyword is used to create object?",
+      "options": [
+        "new",
+        "create",
+        "object",
+        "class"
+      ],
+      "answer": "new",
+      "explanation": "Objects are created using 'new' keyword."
+    },
+    {
+      "question": "Which error occurs at runtime?",
+      "options": [
+        "Syntax error",
+        "Logical error",
+        "Runtime error",
+        "Compile error"
+      ],
+      "answer": "Runtime error",
+      "explanation": "Runtime errors occur during execution."
     }
-  ]
-},
-
-{
-  "category": "System Software",
-  "questions": [
+  ],
+  "Frontend Development": [
     {
-      "id": 1,
-      "question": "What is system software?",
-      "options": ["Application programs", "Programs managing hardware", "Games", "Websites"],
-      "answer": "Programs managing hardware",
-      "explanation": "System software controls and manages computer hardware."
+      "question": "What does HTML stand for?",
+      "options": [
+        "Hyper Text Markup Language",
+        "High Text Machine Language",
+        "Hyper Tool Multi Language",
+        "None"
+      ],
+      "answer": "Hyper Text Markup Language",
+      "explanation": "HTML is used to structure content on the web."
     },
     {
-      "id": 2,
-      "question": "Which is an example of system software?",
-      "options": ["MS Word", "Operating System", "Browser", "Game"],
-      "answer": "Operating System",
-      "explanation": "Operating systems are core system software."
+      "question": "Which tag is used for a hyperlink?",
+      "options": [
+        "<a>",
+        "<link>",
+        "<href>",
+        "<url>"
+      ],
+      "answer": "<a>",
+      "explanation": "The <a> tag defines a hyperlink."
     },
     {
-      "id": 3,
-      "question": "What does a compiler do?",
-      "options": ["Executes code", "Translates entire program", "Edits text", "Stores data"],
-      "answer": "Translates entire program",
-      "explanation": "Compiler converts full source code into machine code."
+      "question": "Which CSS property changes text color?",
+      "options": [
+        "font-color",
+        "color",
+        "text-style",
+        "bgcolor"
+      ],
+      "answer": "color",
+      "explanation": "The 'color' property sets text color."
     },
     {
-      "id": 4,
-      "question": "What does an interpreter do?",
-      "options": ["Translates line by line", "Stores files", "Compiles fully", "Deletes code"],
-      "answer": "Translates line by line",
-      "explanation": "Interpreter executes code line by line."
+      "question": "Which is used for styling web pages?",
+      "options": [
+        "HTML",
+        "CSS",
+        "Java",
+        "SQL"
+      ],
+      "answer": "CSS",
+      "explanation": "CSS is used to style HTML elements."
     },
     {
-      "id": 5,
-      "question": "Assembler converts:",
-      "options": ["High-level to low-level", "Assembly to machine code", "Binary to text", "Text to binary"],
-      "answer": "Assembly to machine code",
-      "explanation": "Assembler converts assembly language into machine code."
+      "question": "Which language is used for web interactivity?",
+      "options": [
+        "HTML",
+        "CSS",
+        "JavaScript",
+        "Python"
+      ],
+      "answer": "JavaScript",
+      "explanation": "JavaScript adds interactivity to web pages."
     },
     {
-      "id": 6,
-      "question": "Which is not system software?",
-      "options": ["Compiler", "OS", "Device Driver", "MS Excel"],
-      "answer": "MS Excel",
-      "explanation": "MS Excel is application software."
+      "question": "Which HTML tag is used for images?",
+      "options": [
+        "<img>",
+        "<image>",
+        "<src>",
+        "<pic>"
+      ],
+      "answer": "<img>",
+      "explanation": "The <img> tag embeds images."
     },
     {
-      "id": 7,
-      "question": "Linker is used for:",
-      "options": ["Editing code", "Combining object files", "Running program", "Storing data"],
-      "answer": "Combining object files",
-      "explanation": "Linker combines multiple object files into one executable."
+      "question": "Which CSS property controls font size?",
+      "options": [
+        "text-size",
+        "font-size",
+        "size",
+        "font-style"
+      ],
+      "answer": "font-size",
+      "explanation": "font-size sets the size of text."
     },
     {
-      "id": 8,
-      "question": "Loader is used for:",
-      "options": ["Loading program into memory", "Editing code", "Debugging", "Compiling"],
-      "answer": "Loading program into memory",
-      "explanation": "Loader places program into memory for execution."
+      "question": "Which symbol is used for ID selector in CSS?",
+      "options": [
+        ".",
+        "#",
+        "*",
+        "&"
+      ],
+      "answer": "#",
+      "explanation": "# is used to select elements by ID."
     },
     {
-      "id": 9,
-      "question": "Device driver is:",
-      "options": ["Application", "Interface between OS and hardware", "Game", "Database"],
-      "answer": "Interface between OS and hardware",
-      "explanation": "Device drivers allow OS to communicate with hardware."
+      "question": "Which symbol is used for class selector?",
+      "options": [
+        "#",
+        ".",
+        "*",
+        "%"
+      ],
+      "answer": ".",
+      "explanation": ". selects elements by class."
     },
     {
-      "id": 10,
-      "question": "What is firmware?",
-      "options": ["Temporary memory", "Software in hardware", "Application", "Virus"],
-      "answer": "Software in hardware",
-      "explanation": "Firmware is software embedded in hardware devices."
+      "question": "What does DOM stand for?",
+      "options": [
+        "Document Object Model",
+        "Data Object Method",
+        "Digital Object Model",
+        "None"
+      ],
+      "answer": "Document Object Model",
+      "explanation": "DOM represents the structure of HTML documents."
     },
     {
-      "id": 11,
-      "question": "System calls are used for:",
-      "options": ["User communication", "OS interaction", "Printing", "Storage"],
-      "answer": "OS interaction",
-      "explanation": "System calls allow programs to request OS services."
+      "question": "Which method selects element by ID in JS?",
+      "options": [
+        "getElementById()",
+        "query()",
+        "select()",
+        "getId()"
+      ],
+      "answer": "getElementById()",
+      "explanation": "Used to select element by ID."
     },
     {
-      "id": 12,
-      "question": "Kernel is:",
-      "options": ["UI", "Core of OS", "Application", "Driver"],
-      "answer": "Core of OS",
-      "explanation": "Kernel manages system resources."
+      "question": "Which event occurs on click?",
+      "options": [
+        "onhover",
+        "onclick",
+        "onchange",
+        "onpress"
+      ],
+      "answer": "onclick",
+      "explanation": "onclick triggers when element is clicked."
     },
     {
-      "id": 13,
-      "question": "Which software controls CPU scheduling?",
-      "options": ["Compiler", "OS", "Browser", "Editor"],
-      "answer": "OS",
-      "explanation": "Operating system handles CPU scheduling."
+      "question": "Which tag is used for headings?",
+      "options": [
+        "<h1> to <h6>",
+        "<head>",
+        "<heading>",
+        "<title>"
+      ],
+      "answer": "<h1> to <h6>",
+      "explanation": "HTML provides 6 heading levels."
     },
     {
-      "id": 14,
-      "question": "What is a shell?",
-      "options": ["Hardware", "User interface", "Compiler", "Memory"],
-      "answer": "User interface",
-      "explanation": "Shell allows users to interact with OS."
+      "question": "Which CSS property controls layout?",
+      "options": [
+        "display",
+        "color",
+        "font",
+        "margin"
+      ],
+      "answer": "display",
+      "explanation": "display defines layout behavior."
     },
     {
-      "id": 15,
-      "question": "Which tool finds errors in code?",
-      "options": ["Compiler", "Debugger", "Loader", "Assembler"],
-      "answer": "Debugger",
-      "explanation": "Debugger helps identify and fix errors."
+      "question": "Which value makes element flexible?",
+      "options": [
+        "block",
+        "inline",
+        "flex",
+        "none"
+      ],
+      "answer": "flex",
+      "explanation": "flex enables flexible layouts."
     },
     {
-      "id": 16,
-      "question": "Which software manages memory?",
-      "options": ["OS", "Browser", "Editor", "Game"],
-      "answer": "OS",
-      "explanation": "Operating system manages memory allocation."
+      "question": "Which attribute provides image path?",
+      "options": [
+        "href",
+        "src",
+        "link",
+        "path"
+      ],
+      "answer": "src",
+      "explanation": "src defines image source."
     },
     {
-      "id": 17,
-      "question": "High-level language is converted to machine code by:",
-      "options": ["Compiler", "Loader", "Linker", "Driver"],
-      "answer": "Compiler",
-      "explanation": "Compiler translates high-level code to machine code."
+      "question": "Which tag is used for lists?",
+      "options": [
+        "<ul>",
+        "<li>",
+        "<list>",
+        "both <ul> and <li>"
+      ],
+      "answer": "both <ul> and <li>",
+      "explanation": "<ul> defines list, <li> defines items."
     },
     {
-      "id": 18,
-      "question": "What is utility software?",
-      "options": ["Games", "Support programs", "OS", "Hardware"],
-      "answer": "Support programs",
-      "explanation": "Utilities help maintain and optimize system."
+      "question": "Which CSS property adds space inside element?",
+      "options": [
+        "margin",
+        "padding",
+        "border",
+        "spacing"
+      ],
+      "answer": "padding",
+      "explanation": "Padding adds inner spacing."
     },
     {
-      "id": 19,
-      "question": "Which is a system utility?",
-      "options": ["Disk cleanup", "Word", "Excel", "Browser"],
-      "answer": "Disk cleanup",
-      "explanation": "Disk cleanup is a system utility."
+      "question": "Which property adds outer spacing?",
+      "options": [
+        "padding",
+        "margin",
+        "border",
+        "space"
+      ],
+      "answer": "margin",
+      "explanation": "Margin controls outer spacing."
     },
     {
-      "id": 20,
-      "question": "Which part handles I/O operations?",
-      "options": ["CPU", "OS", "Compiler", "Editor"],
-      "answer": "OS",
-      "explanation": "Operating system manages I/O devices."
+      "question": "Which JS keyword declares variable?",
+      "options": [
+        "var",
+        "let",
+        "const",
+        "all"
+      ],
+      "answer": "all",
+      "explanation": "var, let, and const are used to declare variables."
     }
-  ]
-  },
-{
-  "category": "Computer Networks",
-  "questions": [
+  ],
+  "Backend Development": [
     {
-      "id": 1,
-      "question": "What does LAN stand for?",
-      "options": ["Local Area Network", "Large Area Network", "Long Area Network", "Light Area Network"],
-      "answer": "Local Area Network",
-      "explanation": "LAN refers to a network within a small geographical area."
+      "question": "What is a REST API?",
+      "options": [
+        "A type of database",
+        "A web service using HTTP",
+        "A programming language",
+        "None"
+      ],
+      "answer": "A web service using HTTP",
+      "explanation": "REST APIs use HTTP methods to communicate between client and server."
     },
     {
-      "id": 2,
-      "question": "Which device connects multiple networks?",
-      "options": ["Switch", "Hub", "Router", "Repeater"],
-      "answer": "Router",
-      "explanation": "Router connects different networks and routes data."
+      "question": "Which HTTP method is used to fetch data?",
+      "options": [
+        "POST",
+        "GET",
+        "PUT",
+        "DELETE"
+      ],
+      "answer": "GET",
+      "explanation": "GET is used to retrieve data from server."
     },
     {
-      "id": 3,
-      "question": "What is the full form of IP?",
-      "options": ["Internet Protocol", "Internal Protocol", "Input Protocol", "Interface Protocol"],
+      "question": "Which method is used to create data?",
+      "options": [
+        "GET",
+        "POST",
+        "PUT",
+        "DELETE"
+      ],
+      "answer": "POST",
+      "explanation": "POST is used to send data to server."
+    },
+    {
+      "question": "Which method updates data?",
+      "options": [
+        "GET",
+        "POST",
+        "PUT",
+        "DELETE"
+      ],
+      "answer": "PUT",
+      "explanation": "PUT updates existing data."
+    },
+    {
+      "question": "Which method deletes data?",
+      "options": [
+        "GET",
+        "POST",
+        "PUT",
+        "DELETE"
+      ],
+      "answer": "DELETE",
+      "explanation": "DELETE removes data."
+    },
+    {
+      "question": "What does JSON stand for?",
+      "options": [
+        "JavaScript Object Notation",
+        "Java Syntax Object Network",
+        "JSON Object Name",
+        "None"
+      ],
+      "answer": "JavaScript Object Notation",
+      "explanation": "JSON is used for data exchange."
+    },
+    {
+      "question": "Which status code means success?",
+      "options": [
+        "200",
+        "404",
+        "500",
+        "403"
+      ],
+      "answer": "200",
+      "explanation": "200 OK indicates successful request."
+    },
+    {
+      "question": "Which code means not found?",
+      "options": [
+        "200",
+        "404",
+        "500",
+        "301"
+      ],
+      "answer": "404",
+      "explanation": "404 means resource not found."
+    },
+    {
+      "question": "Which code indicates server error?",
+      "options": [
+        "200",
+        "404",
+        "500",
+        "302"
+      ],
+      "answer": "500",
+      "explanation": "500 means internal server error."
+    },
+    {
+      "question": "What is authentication?",
+      "options": [
+        "Verifying identity",
+        "Giving permissions",
+        "Deleting data",
+        "None"
+      ],
+      "answer": "Verifying identity",
+      "explanation": "Authentication confirms who the user is."
+    },
+    {
+      "question": "What is authorization?",
+      "options": [
+        "Identity check",
+        "Permission check",
+        "Login",
+        "Logout"
+      ],
+      "answer": "Permission check",
+      "explanation": "Authorization determines access rights."
+    },
+    {
+      "question": "What is JWT?",
+      "options": [
+        "Java Web Token",
+        "JSON Web Token",
+        "JavaScript Web Tool",
+        "None"
+      ],
+      "answer": "JSON Web Token",
+      "explanation": "JWT is used for secure authentication."
+    },
+    {
+      "question": "Which layer handles HTTP requests?",
+      "options": [
+        "Database",
+        "Controller",
+        "Service",
+        "Repository"
+      ],
+      "answer": "Controller",
+      "explanation": "Controller handles incoming requests."
+    },
+    {
+      "question": "Which layer contains business logic?",
+      "options": [
+        "Controller",
+        "Service",
+        "Repository",
+        "UI"
+      ],
+      "answer": "Service",
+      "explanation": "Service layer processes logic."
+    },
+    {
+      "question": "Which layer interacts with database?",
+      "options": [
+        "Controller",
+        "Service",
+        "Repository",
+        "UI"
+      ],
+      "answer": "Repository",
+      "explanation": "Repository manages database operations."
+    },
+    {
+      "question": "What is API?",
+      "options": [
+        "Application Programming Interface",
+        "Advanced Programming Input",
+        "Application Process Integration",
+        "None"
+      ],
+      "answer": "Application Programming Interface",
+      "explanation": "API allows communication between systems."
+    },
+    {
+      "question": "What is middleware?",
+      "options": [
+        "Between client and server",
+        "Database tool",
+        "Frontend code",
+        "None"
+      ],
+      "answer": "Between client and server",
+      "explanation": "Middleware processes requests before reaching server."
+    },
+    {
+      "question": "Which format is commonly used in APIs?",
+      "options": [
+        "XML",
+        "JSON",
+        "Both",
+        "None"
+      ],
+      "answer": "Both",
+      "explanation": "Both XML and JSON are used, JSON is more common."
+    },
+    {
+      "question": "What is endpoint?",
+      "options": [
+        "URL of API",
+        "Database table",
+        "Function",
+        "None"
+      ],
+      "answer": "URL of API",
+      "explanation": "Endpoint is the API URL."
+    },
+    {
+      "question": "Which tool is used to test APIs?",
+      "options": [
+        "Postman",
+        "Chrome",
+        "VS Code",
+        "MySQL"
+      ],
+      "answer": "Postman",
+      "explanation": "Postman is used for API testing."
+    }
+  ],
+  "Databases": [
+    {
+      "question": "What is a database?",
+      "options": [
+        "Collection of data",
+        "Program",
+        "Language",
+        "Tool"
+      ],
+      "answer": "Collection of data",
+      "explanation": "A database stores structured data."
+    },
+    {
+      "question": "Which language is used for databases?",
+      "options": [
+        "HTML",
+        "CSS",
+        "SQL",
+        "Java"
+      ],
+      "answer": "SQL",
+      "explanation": "SQL is used to manage and query databases."
+    },
+    {
+      "question": "Which SQL command retrieves data?",
+      "options": [
+        "GET",
+        "SELECT",
+        "FETCH",
+        "SHOW"
+      ],
+      "answer": "SELECT",
+      "explanation": "SELECT is used to fetch data."
+    },
+    {
+      "question": "Which command inserts data?",
+      "options": [
+        "ADD",
+        "INSERT",
+        "PUT",
+        "CREATE"
+      ],
+      "answer": "INSERT",
+      "explanation": "INSERT adds new records."
+    },
+    {
+      "question": "Which command deletes data?",
+      "options": [
+        "REMOVE",
+        "DELETE",
+        "DROP",
+        "CLEAR"
+      ],
+      "answer": "DELETE",
+      "explanation": "DELETE removes records."
+    },
+    {
+      "question": "Which command updates data?",
+      "options": [
+        "MODIFY",
+        "UPDATE",
+        "CHANGE",
+        "SET"
+      ],
+      "answer": "UPDATE",
+      "explanation": "UPDATE modifies existing records."
+    },
+    {
+      "question": "What is a primary key?",
+      "options": [
+        "Unique identifier",
+        "Duplicate key",
+        "Foreign key",
+        "Index"
+      ],
+      "answer": "Unique identifier",
+      "explanation": "Primary key uniquely identifies a row."
+    },
+    {
+      "question": "What is a foreign key?",
+      "options": [
+        "Unique key",
+        "Link between tables",
+        "Index",
+        "Column"
+      ],
+      "answer": "Link between tables",
+      "explanation": "Foreign key connects two tables."
+    },
+    {
+      "question": "Which clause filters data?",
+      "options": [
+        "WHERE",
+        "ORDER",
+        "GROUP",
+        "HAVING"
+      ],
+      "answer": "WHERE",
+      "explanation": "WHERE filters records."
+    },
+    {
+      "question": "Which clause sorts data?",
+      "options": [
+        "ORDER BY",
+        "SORT",
+        "GROUP BY",
+        "WHERE"
+      ],
+      "answer": "ORDER BY",
+      "explanation": "ORDER BY sorts results."
+    },
+    {
+      "question": "Which join returns matching records?",
+      "options": [
+        "LEFT JOIN",
+        "RIGHT JOIN",
+        "INNER JOIN",
+        "FULL JOIN"
+      ],
+      "answer": "INNER JOIN",
+      "explanation": "INNER JOIN returns matching rows."
+    },
+    {
+      "question": "Which join returns all left records?",
+      "options": [
+        "LEFT JOIN",
+        "RIGHT JOIN",
+        "INNER JOIN",
+        "FULL JOIN"
+      ],
+      "answer": "LEFT JOIN",
+      "explanation": "LEFT JOIN returns all left table records."
+    },
+    {
+      "question": "What is normalization?",
+      "options": [
+        "Organizing data",
+        "Deleting data",
+        "Updating data",
+        "Indexing"
+      ],
+      "answer": "Organizing data",
+      "explanation": "Normalization reduces redundancy."
+    },
+    {
+      "question": "Which constraint prevents null values?",
+      "options": [
+        "UNIQUE",
+        "NOT NULL",
+        "PRIMARY KEY",
+        "FOREIGN KEY"
+      ],
+      "answer": "NOT NULL",
+      "explanation": "NOT NULL ensures no empty values."
+    },
+    {
+      "question": "Which constraint ensures uniqueness?",
+      "options": [
+        "PRIMARY KEY",
+        "UNIQUE",
+        "Both",
+        "None"
+      ],
+      "answer": "Both",
+      "explanation": "Both PRIMARY KEY and UNIQUE enforce uniqueness."
+    },
+    {
+      "question": "What is an index?",
+      "options": [
+        "Speeds up queries",
+        "Deletes data",
+        "Stores data",
+        "None"
+      ],
+      "answer": "Speeds up queries",
+      "explanation": "Indexes improve query performance."
+    },
+    {
+      "question": "Which command removes table?",
+      "options": [
+        "DELETE",
+        "DROP",
+        "REMOVE",
+        "CLEAR"
+      ],
+      "answer": "DROP",
+      "explanation": "DROP deletes entire table."
+    },
+    {
+      "question": "What is schema?",
+      "options": [
+        "Structure of database",
+        "Query",
+        "Table",
+        "Index"
+      ],
+      "answer": "Structure of database",
+      "explanation": "Schema defines database structure."
+    },
+    {
+      "question": "Which function counts rows?",
+      "options": [
+        "SUM()",
+        "COUNT()",
+        "AVG()",
+        "MAX()"
+      ],
+      "answer": "COUNT()",
+      "explanation": "COUNT() returns number of rows."
+    },
+    {
+      "question": "Which clause groups data?",
+      "options": [
+        "GROUP BY",
+        "ORDER BY",
+        "WHERE",
+        "HAVING"
+      ],
+      "answer": "GROUP BY",
+      "explanation": "GROUP BY groups records."
+    }
+  ],
+  "Computer Networks": [
+    {
+      "question": "What is a computer network?",
+      "options": [
+        "Collection of connected devices",
+        "Database",
+        "Software",
+        "None"
+      ],
+      "answer": "Collection of connected devices",
+      "explanation": "A network connects multiple devices to share data."
+    },
+    {
+      "question": "What does IP stand for?",
+      "options": [
+        "Internet Protocol",
+        "Internal Program",
+        "Input Process",
+        "None"
+      ],
       "answer": "Internet Protocol",
-      "explanation": "IP is used for addressing and routing data packets."
+      "explanation": "IP is used to identify devices on a network."
     },
     {
-      "id": 4,
-      "question": "Which layer is responsible for data encryption?",
-      "options": ["Physical", "Transport", "Presentation", "Network"],
-      "answer": "Presentation",
-      "explanation": "Presentation layer handles encryption and formatting."
+      "question": "Which protocol is used for web browsing?",
+      "options": [
+        "FTP",
+        "HTTP",
+        "SMTP",
+        "TCP"
+      ],
+      "answer": "HTTP",
+      "explanation": "HTTP is used to load web pages."
     },
     {
-      "id": 5,
-      "question": "What does HTTP stand for?",
-      "options": ["Hyper Text Transfer Protocol", "High Transfer Text Protocol", "Hyper Tool Transfer Protocol", "None"],
-      "answer": "Hyper Text Transfer Protocol",
-      "explanation": "HTTP is used for communication over the web."
+      "question": "Which protocol is secure version of HTTP?",
+      "options": [
+        "HTTPS",
+        "FTP",
+        "TCP",
+        "SSL"
+      ],
+      "answer": "HTTPS",
+      "explanation": "HTTPS uses encryption for secure communication."
     },
     {
-      "id": 6,
+      "question": "What does DNS do?",
+      "options": [
+        "Stores files",
+        "Converts domain to IP",
+        "Encrypts data",
+        "None"
+      ],
+      "answer": "Converts domain to IP",
+      "explanation": "DNS translates domain names into IP addresses."
+    },
+    {
       "question": "Which protocol is used to send emails?",
-      "options": ["HTTP", "FTP", "SMTP", "TCP"],
+      "options": [
+        "HTTP",
+        "SMTP",
+        "FTP",
+        "TCP"
+      ],
       "answer": "SMTP",
       "explanation": "SMTP is used for sending emails."
     },
     {
-      "id": 7,
       "question": "Which protocol is used to receive emails?",
-      "options": ["POP3", "SMTP", "FTP", "HTTP"],
+      "options": [
+        "POP3",
+        "SMTP",
+        "HTTP",
+        "FTP"
+      ],
       "answer": "POP3",
-      "explanation": "POP3 is used to retrieve emails from server."
+      "explanation": "POP3 is used to receive emails."
     },
     {
-      "id": 8,
-      "question": "Which topology connects all nodes to a central hub?",
-      "options": ["Bus", "Star", "Ring", "Mesh"],
-      "answer": "Star",
-      "explanation": "In star topology, all nodes connect to a central hub."
+      "question": "What is TCP?",
+      "options": [
+        "Reliable protocol",
+        "Fast but unreliable",
+        "Database",
+        "None"
+      ],
+      "answer": "Reliable protocol",
+      "explanation": "TCP ensures reliable data transfer."
     },
     {
-      "id": 9,
-      "question": "What is the function of a switch?",
-      "options": ["Broadcast data", "Connect networks", "Forward frames to correct device", "Amplify signal"],
-      "answer": "Forward frames to correct device",
-      "explanation": "Switch sends data to specific destination."
+      "question": "What is UDP?",
+      "options": [
+        "Reliable protocol",
+        "Unreliable but fast",
+        "Database",
+        "None"
+      ],
+      "answer": "Unreliable but fast",
+      "explanation": "UDP is faster but does not guarantee delivery."
     },
     {
-      "id": 10,
-      "question": "Which layer handles routing?",
-      "options": ["Transport", "Network", "Data Link", "Application"],
-      "answer": "Network",
-      "explanation": "Network layer determines best path for data."
+      "question": "What is an IP address?",
+      "options": [
+        "Device identifier",
+        "Website",
+        "Database",
+        "None"
+      ],
+      "answer": "Device identifier",
+      "explanation": "IP uniquely identifies a device on network."
     },
     {
-      "id": 11,
-      "question": "What is bandwidth?",
-      "options": ["Data size", "Transmission speed", "Storage", "Signal type"],
-      "answer": "Transmission speed",
-      "explanation": "Bandwidth is the rate of data transfer."
+      "question": "Which device connects networks?",
+      "options": [
+        "Router",
+        "Switch",
+        "Hub",
+        "Modem"
+      ],
+      "answer": "Router",
+      "explanation": "Router connects different networks."
     },
     {
-      "id": 12,
-      "question": "Which device regenerates signals?",
-      "options": ["Router", "Repeater", "Switch", "Bridge"],
-      "answer": "Repeater",
-      "explanation": "Repeater strengthens weak signals."
+      "question": "Which device connects devices in LAN?",
+      "options": [
+        "Router",
+        "Switch",
+        "Firewall",
+        "Server"
+      ],
+      "answer": "Switch",
+      "explanation": "Switch connects devices in a local network."
     },
     {
-      "id": 13,
-      "question": "What is DNS?",
-      "options": ["Domain Name System", "Data Network Service", "Dynamic Name System", "None"],
-      "answer": "Domain Name System",
-      "explanation": "DNS converts domain names into IP addresses."
-    },
-    {
-      "id": 14,
-      "question": "Which protocol is used for file transfer?",
-      "options": ["HTTP", "FTP", "SMTP", "TCP"],
-      "answer": "FTP",
-      "explanation": "FTP is used for transferring files."
-    },
-    {
-      "id": 15,
-      "question": "Which layer ensures reliable data delivery?",
-      "options": ["Network", "Transport", "Physical", "Application"],
-      "answer": "Transport",
-      "explanation": "Transport layer ensures reliability and error handling."
-    },
-    {
-      "id": 16,
-      "question": "Which address is unique to each device?",
-      "options": ["IP", "MAC", "URL", "DNS"],
-      "answer": "MAC",
-      "explanation": "MAC address uniquely identifies a device."
-    },
-    {
-      "id": 17,
-      "question": "Which protocol is connection-oriented?",
-      "options": ["UDP", "IP", "TCP", "HTTP"],
-      "answer": "TCP",
-      "explanation": "TCP ensures reliable connection-based communication."
-    },
-    {
-      "id": 18,
-      "question": "What is a firewall?",
-      "options": ["Hardware", "Security system", "Software", "Protocol"],
+      "question": "What is firewall?",
+      "options": [
+        "Security system",
+        "Database",
+        "Protocol",
+        "None"
+      ],
       "answer": "Security system",
-      "explanation": "Firewall protects network from unauthorized access."
+      "explanation": "Firewall protects network from threats."
     },
     {
-      "id": 19,
-      "question": "Which topology forms a closed loop?",
-      "options": ["Bus", "Star", "Ring", "Mesh"],
-      "answer": "Ring",
-      "explanation": "Ring topology connects nodes in circular manner."
+      "question": "What is bandwidth?",
+      "options": [
+        "Speed of network",
+        "Storage",
+        "Memory",
+        "None"
+      ],
+      "answer": "Speed of network",
+      "explanation": "Bandwidth determines data transfer rate."
     },
     {
-      "id": 20,
-      "question": "Which network covers large geographical area?",
-      "options": ["LAN", "MAN", "WAN", "PAN"],
-      "answer": "WAN",
-      "explanation": "WAN spans across large geographical areas."
+      "question": "What is latency?",
+      "options": [
+        "Delay",
+        "Speed",
+        "Storage",
+        "None"
+      ],
+      "answer": "Delay",
+      "explanation": "Latency is time delay in data transfer."
+    },
+    {
+      "question": "What is LAN?",
+      "options": [
+        "Local Area Network",
+        "Large Area Network",
+        "Long Area Network",
+        "None"
+      ],
+      "answer": "Local Area Network",
+      "explanation": "LAN covers a small geographic area."
+    },
+    {
+      "question": "What is WAN?",
+      "options": [
+        "Wide Area Network",
+        "Wireless Area Network",
+        "Web Area Network",
+        "None"
+      ],
+      "answer": "Wide Area Network",
+      "explanation": "WAN covers large geographic areas."
+    },
+    {
+      "question": "Which protocol transfers files?",
+      "options": [
+        "HTTP",
+        "FTP",
+        "SMTP",
+        "DNS"
+      ],
+      "answer": "FTP",
+      "explanation": "FTP is used for file transfer."
+    },
+    {
+      "question": "What is MAC address?",
+      "options": [
+        "Hardware address",
+        "IP address",
+        "Software",
+        "None"
+      ],
+      "answer": "Hardware address",
+      "explanation": "MAC address is unique hardware identifier."
+    },
+    {
+      "question": "Which layer handles data transmission?",
+      "options": [
+        "Application",
+        "Transport",
+        "Network",
+        "All"
+      ],
+      "answer": "All",
+      "explanation": "Multiple layers handle data transmission."
     }
-  ]
-},
-{
-  "category": "Operating Systems",
-  "questions": [
+  ],
+  "Command Line & Tools": [
     {
-      "id": 1,
-      "question": "What is an operating system?",
-      "options": ["Application software", "System software", "Compiler", "Editor"],
-      "answer": "System software",
-      "explanation": "OS is system software that manages hardware and software resources."
+      "question": "What is CLI?",
+      "options": [
+        "Command Line Interface",
+        "Code Level Input",
+        "Computer Logic Interface",
+        "None"
+      ],
+      "answer": "Command Line Interface",
+      "explanation": "CLI allows users to interact using commands."
     },
     {
-      "id": 2,
-      "question": "Which is an example of OS?",
-      "options": ["Windows", "MS Word", "Excel", "Chrome"],
-      "answer": "Windows",
-      "explanation": "Windows is an operating system."
+      "question": "Which command lists files?",
+      "options": [
+        "ls",
+        "dir",
+        "list",
+        "show"
+      ],
+      "answer": "ls",
+      "explanation": "ls lists files in Unix/Linux systems."
     },
     {
-      "id": 3,
-      "question": "What is process?",
-      "options": ["Program in execution", "File", "Memory", "Thread"],
-      "answer": "Program in execution",
-      "explanation": "A process is an active program in execution."
+      "question": "Which command changes directory?",
+      "options": [
+        "cd",
+        "dir",
+        "move",
+        "open"
+      ],
+      "answer": "cd",
+      "explanation": "cd is used to change directories."
     },
     {
-      "id": 4,
-      "question": "Which scheduling is first come first serve?",
-      "options": ["FCFS", "SJF", "Round Robin", "Priority"],
-      "answer": "FCFS",
-      "explanation": "FCFS executes processes in arrival order."
+      "question": "Which command creates folder?",
+      "options": [
+        "mkdir",
+        "make",
+        "create",
+        "new"
+      ],
+      "answer": "mkdir",
+      "explanation": "mkdir creates a new directory."
     },
     {
-      "id": 5,
-      "question": "Which scheduling uses time slice?",
-      "options": ["FCFS", "SJF", "Round Robin", "Priority"],
-      "answer": "Round Robin",
-      "explanation": "Round Robin uses time quantum for each process."
+      "question": "Which command removes file?",
+      "options": [
+        "delete",
+        "rm",
+        "remove",
+        "del"
+      ],
+      "answer": "rm",
+      "explanation": "rm deletes files in Unix/Linux."
     },
     {
-      "id": 6,
-      "question": "What is deadlock?",
-      "options": ["Normal execution", "Infinite loop", "Processes waiting forever", "Crash"],
-      "answer": "Processes waiting forever",
-      "explanation": "Deadlock occurs when processes wait indefinitely."
+      "question": "Which command copies files?",
+      "options": [
+        "cp",
+        "copy",
+        "clone",
+        "dup"
+      ],
+      "answer": "cp",
+      "explanation": "cp copies files."
     },
     {
-      "id": 7,
-      "question": "Which memory is fastest?",
-      "options": ["RAM", "ROM", "Cache", "Disk"],
-      "answer": "Cache",
-      "explanation": "Cache memory is fastest among these."
+      "question": "Which command moves files?",
+      "options": [
+        "mv",
+        "move",
+        "shift",
+        "relocate"
+      ],
+      "answer": "mv",
+      "explanation": "mv moves or renames files."
     },
     {
-      "id": 8,
-      "question": "What is paging?",
-      "options": ["Memory division", "CPU scheduling", "Disk storage", "Threading"],
-      "answer": "Memory division",
-      "explanation": "Paging divides memory into fixed-size blocks."
+      "question": "Which command shows current directory?",
+      "options": [
+        "pwd",
+        "dir",
+        "where",
+        "path"
+      ],
+      "answer": "pwd",
+      "explanation": "pwd shows present working directory."
     },
     {
-      "id": 9,
-      "question": "Which is non-volatile memory?",
-      "options": ["RAM", "Cache", "ROM", "Register"],
-      "answer": "ROM",
-      "explanation": "ROM retains data even after power off."
+      "question": "What is Git?",
+      "options": [
+        "Version control system",
+        "Database",
+        "IDE",
+        "Language"
+      ],
+      "answer": "Version control system",
+      "explanation": "Git tracks code changes."
     },
     {
-      "id": 10,
-      "question": "What is a thread?",
-      "options": ["Process", "Lightweight process", "Program", "File"],
-      "answer": "Lightweight process",
-      "explanation": "Thread is a smaller unit of a process."
+      "question": "Which command initializes Git repo?",
+      "options": [
+        "git start",
+        "git init",
+        "git create",
+        "git new"
+      ],
+      "answer": "git init",
+      "explanation": "git init creates a repository."
     },
     {
-      "id": 11,
-      "question": "Which OS allows multiple users?",
-      "options": ["Single user OS", "Multi-user OS", "Batch OS", "Real-time OS"],
-      "answer": "Multi-user OS",
-      "explanation": "Multi-user OS supports multiple users simultaneously."
+      "question": "Which command adds files to staging?",
+      "options": [
+        "git push",
+        "git add",
+        "git commit",
+        "git stage"
+      ],
+      "answer": "git add",
+      "explanation": "git add stages files."
     },
     {
-      "id": 12,
-      "question": "Which OS works in real-time?",
-      "options": ["Batch OS", "Real-time OS", "Distributed OS", "Network OS"],
-      "answer": "Real-time OS",
-      "explanation": "Real-time OS responds immediately to inputs."
+      "question": "Which command saves changes?",
+      "options": [
+        "git save",
+        "git commit",
+        "git push",
+        "git update"
+      ],
+      "answer": "git commit",
+      "explanation": "git commit records changes."
     },
     {
-      "id": 13,
-      "question": "What is virtual memory?",
-      "options": ["Physical memory", "Secondary memory used as RAM", "Cache", "Register"],
-      "answer": "Secondary memory used as RAM",
-      "explanation": "Virtual memory extends RAM using disk storage."
+      "question": "Which command uploads code?",
+      "options": [
+        "git upload",
+        "git push",
+        "git send",
+        "git share"
+      ],
+      "answer": "git push",
+      "explanation": "git push sends code to remote."
     },
     {
-      "id": 14,
-      "question": "Which manages files?",
-      "options": ["CPU", "OS", "Compiler", "Editor"],
-      "answer": "OS",
-      "explanation": "Operating system manages file system."
+      "question": "Which command downloads repo?",
+      "options": [
+        "git get",
+        "git clone",
+        "git pull",
+        "git copy"
+      ],
+      "answer": "git clone",
+      "explanation": "git clone copies repository."
     },
     {
-      "id": 15,
-      "question": "Which algorithm gives minimum waiting time?",
-      "options": ["FCFS", "SJF", "RR", "Priority"],
-      "answer": "SJF",
-      "explanation": "Shortest Job First minimizes average waiting time."
+      "question": "Which command updates repo?",
+      "options": [
+        "git pull",
+        "git update",
+        "git fetch",
+        "git sync"
+      ],
+      "answer": "git pull",
+      "explanation": "git pull updates local repo."
     },
     {
-      "id": 16,
-      "question": "What is kernel?",
-      "options": ["Application", "Core of OS", "Driver", "Program"],
-      "answer": "Core of OS",
-      "explanation": "Kernel is the central part of OS."
+      "question": "What is npm?",
+      "options": [
+        "Node Package Manager",
+        "New Program Module",
+        "Network Process Manager",
+        "None"
+      ],
+      "answer": "Node Package Manager",
+      "explanation": "npm manages JavaScript packages."
     },
     {
-      "id": 17,
-      "question": "Which is not OS function?",
-      "options": ["Memory management", "Process management", "File management", "Word processing"],
-      "answer": "Word processing",
-      "explanation": "Word processing is application software."
+      "question": "Which command installs packages?",
+      "options": [
+        "npm get",
+        "npm install",
+        "npm add",
+        "npm fetch"
+      ],
+      "answer": "npm install",
+      "explanation": "npm install installs dependencies."
     },
     {
-      "id": 18,
-      "question": "What is context switching?",
-      "options": ["Changing CPU", "Switching processes", "Memory allocation", "Disk operation"],
-      "answer": "Switching processes",
-      "explanation": "CPU switches from one process to another."
+      "question": "What is Maven?",
+      "options": [
+        "Build tool",
+        "Database",
+        "Language",
+        "Framework"
+      ],
+      "answer": "Build tool",
+      "explanation": "Maven manages Java projects."
     },
     {
-      "id": 19,
-      "question": "Which scheduling is preemptive?",
-      "options": ["FCFS", "SJF", "Round Robin", "FIFO"],
-      "answer": "Round Robin",
-      "explanation": "Round Robin allows process interruption."
+      "question": "Which command runs Maven project?",
+      "options": [
+        "mvn run",
+        "mvn start",
+        "mvn spring-boot:run",
+        "mvn execute"
+      ],
+      "answer": "mvn spring-boot:run",
+      "explanation": "Runs Spring Boot application."
     },
     {
-      "id": 20,
-      "question": "Which handles I/O devices?",
-      "options": ["CPU", "OS", "Compiler", "Editor"],
-      "answer": "OS",
-      "explanation": "Operating system manages I/O operations."
-    }
-  ]
-},
-{
-  "category": "Problem Solving on Programming",
-  "questions": [
-    {
-      "id": 1,
-      "question": "What is the output of: printf(\"%d\", 5+3*2);",
-      "options": ["16", "11", "13", "10"],
-      "answer": "11",
-      "explanation": "Multiplication has higher precedence → 3*2=6, then 5+6=11."
-    },
-    {
-      "id": 2,
-      "question": "What is the output of: printf(\"%d\", 10/3);",
-      "options": ["3.33", "3", "4", "2"],
-      "answer": "3",
-      "explanation": "Integer division returns quotient without decimals."
-    },
-    {
-      "id": 3,
-      "question": "Which loop is best when number of iterations is unknown?",
-      "options": ["for", "while", "do-while", "switch"],
-      "answer": "while",
-      "explanation": "while loop is used when condition-based iteration is needed."
-    },
-    {
-      "id": 4,
-      "question": "What is the output of: printf(\"%d\", 2<<1);",
-      "options": ["2", "4", "6", "8"],
-      "answer": "4",
-      "explanation": "Left shift multiplies by 2 → 2<<1 = 4."
-    },
-    {
-      "id": 5,
-      "question": "Which data structure is used for recursion?",
-      "options": ["Queue", "Stack", "Array", "Linked List"],
-      "answer": "Stack",
-      "explanation": "Recursion uses call stack."
-    },
-    {
-      "id": 6,
-      "question": "Time complexity of linear search?",
-      "options": ["O(1)", "O(n)", "O(log n)", "O(n^2)"],
-      "answer": "O(n)",
-      "explanation": "In worst case, all elements are checked."
-    },
-    {
-      "id": 7,
-      "question": "What is output of: printf(\"%d\", 7%3);",
-      "options": ["1", "2", "3", "0"],
-      "answer": "1",
-      "explanation": "7 divided by 3 gives remainder 1."
-    },
-    {
-      "id": 8,
-      "question": "Which sorting algorithm is fastest on average?",
-      "options": ["Bubble Sort", "Selection Sort", "Quick Sort", "Insertion Sort"],
-      "answer": "Quick Sort",
-      "explanation": "Quick sort has average complexity O(n log n)."
-    },
-    {
-      "id": 9,
-      "question": "Which condition is used for decision making?",
-      "options": ["for", "if", "while", "break"],
-      "answer": "if",
-      "explanation": "if statement is used for decision making."
-    },
-    {
-      "id": 10,
-      "question": "What is output: printf(\"%d\", ++x); if x=5?",
-      "options": ["5", "6", "4", "Error"],
-      "answer": "6",
-      "explanation": "Pre-increment increases value before use."
-    },
-    {
-      "id": 11,
-      "question": "Binary search works on:",
-      "options": ["Unsorted array", "Sorted array", "Linked list", "Queue"],
-      "answer": "Sorted array",
-      "explanation": "Binary search requires sorted data."
-    },
-    {
-      "id": 12,
-      "question": "Which is fastest access structure?",
-      "options": ["Array", "Linked List", "Stack", "Queue"],
-      "answer": "Array",
-      "explanation": "Array provides direct index access."
-    },
-    {
-      "id": 13,
-      "question": "What is output: printf(\"%d\", 3*3+3);",
-      "options": ["12", "18", "9", "6"],
-      "answer": "12",
-      "explanation": "3*3=9, then 9+3=12."
-    },
-    {
-      "id": 14,
-      "question": "Which algorithm uses divide and conquer?",
-      "options": ["Bubble Sort", "Merge Sort", "Linear Search", "Selection Sort"],
-      "answer": "Merge Sort",
-      "explanation": "Merge sort divides and merges data."
-    },
-    {
-      "id": 15,
-      "question": "What is output: printf(\"%d\", 10==10);",
-      "options": ["0", "1", "10", "Error"],
-      "answer": "1",
-      "explanation": "Comparison true → returns 1."
-    },
-    {
-      "id": 16,
-      "question": "Which loop runs at least once?",
-      "options": ["for", "while", "do-while", "none"],
-      "answer": "do-while",
-      "explanation": "do-while executes before checking condition."
-    },
-    {
-      "id": 17,
-      "question": "Stack follows:",
-      "options": ["FIFO", "LIFO", "Random", "None"],
-      "answer": "LIFO",
-      "explanation": "Stack uses Last In First Out."
-    },
-    {
-      "id": 18,
-      "question": "Queue follows:",
-      "options": ["FIFO", "LIFO", "Random", "None"],
-      "answer": "FIFO",
-      "explanation": "Queue uses First In First Out."
-    },
-    {
-      "id": 19,
-      "question": "Which operator is used for logical AND?",
-      "options": ["&", "&&", "|", "||"],
-      "answer": "&&",
-      "explanation": "&& is logical AND operator."
-    },
-    {
-      "id": 20,
-      "question": "What is output: printf(\"%d\", 5>3);",
-      "options": ["0", "1", "5", "3"],
-      "answer": "1",
-      "explanation": "Condition true → returns 1."
+      "question": "What is terminal?",
+      "options": [
+        "Command interface",
+        "Database",
+        "Editor",
+        "None"
+      ],
+      "answer": "Command interface",
+      "explanation": "Terminal is used to run CLI commands."
     }
   ]
 }
-]
