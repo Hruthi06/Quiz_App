@@ -2,6 +2,12 @@ import { useEffect, useState } from "react";
 import logo from "./logo.png";
 import "./App.css";
 
+const API_URL = process.env.REACT_APP_API_URL 
+  ? (process.env.REACT_APP_API_URL.startsWith("http") 
+      ? process.env.REACT_APP_API_URL 
+      : `https://${process.env.REACT_APP_API_URL}`) 
+  : "http://127.0.0.1:8000";
+
 function App() {
   const [questions, setQuestions] = useState([]);
   const [answers, setAnswers] = useState({});
@@ -30,7 +36,7 @@ function App() {
   }, [timeLeft, quizStarted, isAnswered, score, loading]);
 
   useEffect(() => {
-    fetch("http://127.0.0.1:8000/categories")
+    fetch(`${API_URL}/categories`)
       .then(res => res.json())
       .then(data => setAvailableCategories(data))
       .catch(err => {
@@ -48,7 +54,7 @@ function App() {
   const fetchQuestions = (cat) => {
     setCategory(cat);
     setLoading(true);
-    fetch(`http://127.0.0.1:8000/generate?category=${encodeURIComponent(cat)}`)
+    fetch(`${API_URL}/generate?category=${encodeURIComponent(cat)}`)
       .then(res => res.json())
       .then(data => {
         if (data.error) {
