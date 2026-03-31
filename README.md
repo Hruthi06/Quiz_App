@@ -58,16 +58,18 @@ A modern full-stack Quiz Application built with **FastAPI (Backend)** and **Reac
 quiz-app/
 │
 ├── backend/
-│   ├── main.py
-│   ├── questions.json
+│ ├── main.py
+│ ├── questions.json
 │
 ├── frontend/
-│   ├── src/
-│   │   ├── App.js
-│   │   ├── components/
-│   │   ├── styles/
+│ ├── src/
+│ │ ├── App.js
+│ │ ├── components/
+│ │ ├── styles/
 │
 ├── README.md
+
+
 ---
 
 ## 🚀 Installation & Setup
