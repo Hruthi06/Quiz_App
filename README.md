@@ -179,4 +179,4 @@ Built with ❤️ using FastAPI + React
 
 - [Backend GitHub](backend/)
 - [Frontend GitHub](frontend/)
-- [Live Demo](https://quizmify.onrender.com)
+- [Live Demo](https://quiz-app-4-hmh9.onrender.com)
